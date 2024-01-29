@@ -4,7 +4,9 @@ module.exports = {
   "./node_modules/flowbite/**/*.js"
 ],
   theme: {
-    extend: {},
+    extend: {
+      'Kanit' : ['Kanit']
+    },
   },
   plugins: [
     require('flowbite/plugin')

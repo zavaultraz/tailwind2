@@ -27,3 +27,40 @@
    }
    
    
+   .xbtn {
+    padding: 0.8em 1.8em;
+    border: 2px solid #8FFF6A;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #8FFF6A;
+   }
+   
+   .xbtn::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #8FFF6A;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   .xbtn:hover::before {
+    width: 105%;
+   }
+   
+   .xbtn:hover {
+    color: #111;
+   }
+   
