@@ -1717,6 +1717,10 @@ input:checked + .toggle-bg {
   background-color: #;
 }
 
+.bg-\[8f\] {
+  background-color: 8f;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
