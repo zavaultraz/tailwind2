@@ -41,12 +41,11 @@
                 <ul class="font-Kanit  flex flex-col justify-self-center py-3  p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-col lg:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
                     style="background-color: #1c1c1e;">
                     <li>
-                        <a href="#"
-                            ></a>
+                        <a href="#"></a>
                     </li>
                     <li>
                         <a href="#"
-                            class="block py-2 px-3 text-[#8FFF6A] rounded-3xl text-2xl md:bg-transparent md:border-0 md:text-[#8fff6a] md:p-0 dark:text-white md:dark:text-[#8fff6a] md:dark:text-2xl" 
+                            class="block py-2 px-3 text-[#8FFF6A] rounded-3xl text-2xl md:bg-transparent md:border-0 md:text-[#8fff6a] md:p-0 dark:text-white md:dark:text-[#8fff6a] md:dark:text-2xl"
                             aria-current="page">Home</a>
                     </li>
                     <li>
@@ -69,8 +68,77 @@
             </div>
             <!--  -->
             <div class="hidden w-full lg:block lg:w-auto">
-                <button class="btn"> Login <i class="bi bi-person-circle"></i>
+                <button class="btn" data-modal-target="authentication-modal" data-modal-toggle="authentication-modal">
+                    Login <i class="bi bi-person-circle"></i>
                 </button>
+                <div id="authentication-modal" tabindex="-1" aria-hidden="true"
+                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                    <div class="relative p-4 w-full max-w-md max-h-full">
+                        <!-- Modal content -->
+                        <div class="relative bg-[#1c1c1e] rounded-lg shadow dark:bg-gray-700">
+                            <!-- Modal header -->
+                            <div
+                                class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                                <h3 class="text-xl font-semibold text-[#8fff6a]">
+                                    Sign in to our platform
+                                </h3>
+                                <button type="button"
+                                    class="end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                                    data-modal-hide="authentication-modal">
+                                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 14 14">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                    </svg>
+                                    <span class="sr-only">Close modal</span>
+                                </button>
+                            </div>
+                            <!-- Modal body -->
+                            <div class="p-4 md:p-5">
+                                <form class="space-y-4" action="#">
+                                    <div>
+                                        <label for="email"
+                                            class="block mb-2 text-sm font-medium text-white">Your
+                                            email</label>
+                                        <input type="email" name="email" id="email"
+                                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#8fff6a] focus:border-[#8fff6a] block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                            placeholder="name@company.com" required>
+                                    </div>
+                                    <div>
+                                        <label for="password"
+                                            class="block mb-2 text-sm font-medium text-white">Your
+                                            password</label>
+                                        <input type="password" name="password" id="password" placeholder="••••••••"
+                                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#8fff6a] focus:border-[#8fff6a] block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                            required>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <div class="flex items-start">
+                                            <div class="flex items-center h-5">
+                                                <input id="remember" type="checkbox" value=""
+                                                    class="w-4 h-4 border border-gray-300 rounded  focus:ring-3 focus:ring-[#8fff6a] dark:bg-gray-600 dark:border-gray-500 dark:focus:ring-[#8fff6a] dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+                                                    required>
+                                            </div>
+                                            <label for="remember"
+                                                class="ms-2 text-sm font-medium text-white ">Remember
+                                                me</label>
+                                        </div>
+                                        <a href="#"
+                                            class="text-sm text-[#8fff6a] hover:underline dark:text-blue-500">Lost
+                                            Password?</a>
+                                    </div>
+                                    <button type="submit"
+                                        class="w-full text-white bg-[#109121] hover:bg-[#8fff6a] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login
+                                        to your account</button>
+                                    <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
+                                        Not registered? <a href="#"
+                                            class="text-[#8fff6a] hover:underline dark:text-blue-500">Create account</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!--  -->
         </div>
@@ -89,10 +157,17 @@
         </div>
         <div class="container">
             <div class="mt-7 p-4">
-                <h1 class="text-4xl md:text-7xl md:text-center md:mx-auto md:grid-cols-1 lg:text-start font-Kanit text-white mt-auto font-bold text-center">Start Making</h1>
-                <h1 class="text-4xl md:text-7xl md:text-center md:mx-auto md:grid-cols-1 lg:text-start font-Kanit text-white mt-auto font-bold text-center">Money With</h1>
-                <h1 class="text-4xl md:text-7xl  md:text-center md:mx-auto md:grid-cols-1 lg:text-start text-center font-Kanit text-white mt-auto font-bold">NFTs ➝</h1>
-                <p class="text-xl  md:text-3xl md:text-center md:mx-auto md:grid-cols-1 lg:text-start font-Kanit text-white text-center font-thin ">
+                <h1
+                    class="text-4xl md:text-7xl md:text-center md:mx-auto md:grid-cols-1 lg:text-start font-Kanit text-white mt-auto font-bold text-center">
+                    Start Making</h1>
+                <h1
+                    class="text-4xl md:text-7xl md:text-center md:mx-auto md:grid-cols-1 lg:text-start font-Kanit text-white mt-auto font-bold text-center">
+                    Money With</h1>
+                <h1
+                    class="text-4xl md:text-7xl  md:text-center md:mx-auto md:grid-cols-1 lg:text-start text-center font-Kanit text-white mt-auto font-bold">
+                    NFTs ➝</h1>
+                <p
+                    class="text-xl  md:text-3xl md:text-center md:mx-auto md:grid-cols-1 lg:text-start font-Kanit text-white text-center font-thin ">
                     Interested in boosting your monthly<br>portfolio by as much as 800-1000%?<br>
                     Enroll in our VIP channel now.
                 </p>
@@ -119,7 +194,8 @@
             NFT Signals is the ultimate alpha group for beginner and experienced traders to make profit flipping NFTs.
         </p>
         <ul class="list-none list-inside flex justify-evenly text-lg mb-6 text-[#8FFF6A]">
-            <li class="text-start text-4xl font-thin flex items-center md:text-6xl md:font-bold">The success rate <br> of our signals is <br>
+            <li class="text-start text-4xl font-thin flex items-center md:text-6xl md:font-bold">The success rate <br>
+                of our signals is <br>
                 80-90%</li>
             <li class="flex items-center">
                 <img src="/src/img/chart-column-grow-svgrepo-com (1).svg" width="200px" class="md:w-[350px]" alt="">
@@ -130,7 +206,9 @@
     <div class="bg-[#111112]">
         <div class="w-full p-4 bg-[#1c1c1e] max-w-full sm:p-8 dark:bg-gray-800 dark:border-gray-700">
             <div class=" mb-4">
-                <h5 class="text-2xl font-bold leading-none lg:text-5xl text-[#8fff6a] dark:text-[#8fff6a] text-center uppercase">Top
+                <h5
+                    class="text-2xl font-bold leading-none lg:text-5xl text-[#8fff6a] dark:text-[#8fff6a] text-center uppercase">
+                    Top
                     Customers <i class="fa-solid fa-ranking-star"></i></h5>
 
             </div>
@@ -139,7 +217,8 @@
                     <li class="py-3 sm:py-4">
                         <div class="flex items-center">
                             <div class="flex-shrink-0">
-                                <img class="w-8 h-8 md:w-16 md:h-16  rounded-full" src="/src/img/pp/1.png" alt="Neil image">
+                                <img class="w-8 h-8 md:w-16 md:h-16  rounded-full" src="/src/img/pp/1.png"
+                                    alt="Neil image">
                             </div>
                             <div class="flex-1 min-w-0 ms-4">
                                 <p class="text-sm md:text-2xl font-medium text-[#8fff6a] truncate dark:text-white">
@@ -149,7 +228,8 @@
                                     Rank 1
                                 </p>
                             </div>
-                            <div class="inline-flex md:text-2xl items-center text-base font-semibold text-white dark:text-white">
+                            <div
+                                class="inline-flex md:text-2xl items-center text-base font-semibold text-white dark:text-white">
                                 3467 Eth
                             </div>
                         </div>
@@ -157,7 +237,8 @@
                     <li class="py-3 sm:py-4">
                         <div class="flex items-center ">
                             <div class="flex-shrink-0">
-                                <img class="w-8 h-8 md:w-16 md:h-16  rounded-full" src="/src/img/pp/2.png" alt="Bonnie image">
+                                <img class="w-8 h-8 md:w-16 md:h-16  rounded-full" src="/src/img/pp/2.png"
+                                    alt="Bonnie image">
                             </div>
                             <div class="flex-1 min-w-0 ms-4">
                                 <p class="text-sm font-medium md:text-2xl text-[#8fff6a] truncate dark:text-white">
@@ -175,7 +256,8 @@
                     <li class="py-3 sm:py-4">
                         <div class="flex items-center">
                             <div class="flex-shrink-0">
-                                <img class="w-8 h-8 md:w-16 md:h-16  rounded-full" src="/src/img/pp/3.png" alt="Michael image">
+                                <img class="w-8 h-8 md:w-16 md:h-16  rounded-full" src="/src/img/pp/3.png"
+                                    alt="Michael image">
                             </div>
                             <div class="flex-1 min-w-0 ms-4">
                                 <p class="text-sm font-medium md:text-2xl text-[#8fff6a] dark:text-white">
@@ -193,7 +275,8 @@
                     <li class="py-3 sm:py-4">
                         <div class="flex items-center ">
                             <div class="flex-shrink-0">
-                                <img class="w-8 h-8 md:w-16 md:h-16  rounded-full" src="/src/img/pp/4.png" alt="Lana image">
+                                <img class="w-8 h-8 md:w-16 md:h-16  rounded-full" src="/src/img/pp/4.png"
+                                    alt="Lana image">
                             </div>
                             <div class="flex-1 min-w-0 ms-4">
                                 <p class="text-sm md:text-2xl font-medium text-[#8fff6a]">
@@ -211,7 +294,8 @@
                     <li class="pt-3 pb-0 sm:pt-4">
                         <div class="flex items-center ">
                             <div class="flex-shrink-0">
-                                <img class="w-8 h-8 md:w-16 md:h-16  rounded-full" src="/src/img/pp/5.png" alt="Thomas image">
+                                <img class="w-8 h-8 md:w-16 md:h-16  rounded-full" src="/src/img/pp/5.png"
+                                    alt="Thomas image">
                             </div>
                             <div class="flex-1 min-w-0 ms-4">
                                 <p class="text-sm font-medium md:text-2xl text-[#8fff6a]">
@@ -898,7 +982,8 @@
     </div>
 
     <div class="bg-[#1c1c1e]">
-        <h1 class="text-5xl font-bold text-center p-5 text-white">Sales development of HAI <span class="text-[#8fff6a]">NFT</span></h1>
+        <h1 class="text-5xl font-bold text-center p-5 text-white">Sales development of HAI <span
+                class="text-[#8fff6a]">NFT</span></h1>
         <div class=" w-full  mx-auto bg-[#1c1c1e] rounded-lg shadow dark:bg-gray-800 p-4 md:p-6">
             <div class="flex justify-between">
                 <div>
@@ -934,8 +1019,7 @@
                     <!-- Dropdown menu -->
                     <div id="lastDaysdropdown"
                         class="z-10 hidden divide-y bg-white divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                        <ul class="py-2  text-sm  dark:text-gray-200"
-                            aria-labelledby="dropdownDefaultButton">
+                        <ul class="py-2  text-sm  dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
                             <li>
                                 <a href="#"
                                     class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Yesterday</a>
@@ -976,14 +1060,15 @@
 
 
 
-       
+
     </div>
 
     </div>
 
     <div class="bg-[#111112]">
         <h1 class="text-5xl pt-5  max-w-full  font-bold text-center mb-6 text-white uppercase">Invest your money with
-            <span class="text-[#8fff6a]">membership</span></h1>
+            <span class="text-[#8fff6a]">membership</span>
+        </h1>
         <div class="grid grid-cols-1 md:grid-cols-2 md:gap-8 px-4 md:px-8 p-5">
             <div
                 class="w-full max-w-sm mx-auto p-6 bg-[#1c1c1e] border border-[#8fff6a] rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
