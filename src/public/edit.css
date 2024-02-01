@@ -63,4 +63,13 @@
    .xbtn:hover {
     color: #111;
    }
-   
+   @media (max-width: 769px) {
+    #tod {
+        display:flex;
+        flex-direction:column;
+    }
+}
+@media (max-width: 426px) {
+    #member {
+        margin:5px 0;
+    }}
