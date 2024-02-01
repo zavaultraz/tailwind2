@@ -76,10 +76,10 @@
         </div>
     </nav>
 
-    <div class="grid grid-cols-1 sm:grid-cols-1 gap-2 bg-[#111112]">
-        <div class="container mb-24 hidden">
+    <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 lg:gap-0 gap-2 bg-[#111112]">
+        <div class="container mb-24 hidden lg:block">
             <div class="p-2 ml-40 justify-center mt-0">
-                <img src="/src/img/row.png" alt="w-full" class="w-75 hidden ">
+                <img src="/src/img/row.png" alt="w-full" class="w-75 hidden lg:block ">
                 <p class="text-xl font-Kanit text-white text-start font-thin">
                     Interested in boosting your monthly<br>portfolio by as much as 800-1000%?<br>
                     Enroll in our VIP channel now.
@@ -89,10 +89,10 @@
         </div>
         <div class="container">
             <div class="mt-7 p-4">
-                <h1 class="text-4xl md:text-7xl md:text-center md:mx-auto md:grid-cols-1 font-Kanit text-white mt-auto font-bold text-center">Start Making</h1>
-                <h1 class="text-4xl md:text-7xl md:text-center md:mx-auto md:grid-cols-1 font-Kanit text-white mt-auto font-bold text-center">Money With</h1>
-                <h1 class="text-4xl md:text-7xl  md:text-center md:mx-auto md:grid-cols-1 text-center font-Kanit text-white mt-auto font-bold">NFTs ➝</h1>
-                <p class="text-xl  md:text-3xl md:text-center md:mx-auto md:grid-cols-1 font-Kanit text-white text-center font-thin ">
+                <h1 class="text-4xl md:text-7xl md:text-center md:mx-auto md:grid-cols-1 lg:text-start font-Kanit text-white mt-auto font-bold text-center">Start Making</h1>
+                <h1 class="text-4xl md:text-7xl md:text-center md:mx-auto md:grid-cols-1 lg:text-start font-Kanit text-white mt-auto font-bold text-center">Money With</h1>
+                <h1 class="text-4xl md:text-7xl  md:text-center md:mx-auto md:grid-cols-1 lg:text-start text-center font-Kanit text-white mt-auto font-bold">NFTs ➝</h1>
+                <p class="text-xl  md:text-3xl md:text-center md:mx-auto md:grid-cols-1 lg:text-start font-Kanit text-white text-center font-thin ">
                     Interested in boosting your monthly<br>portfolio by as much as 800-1000%?<br>
                     Enroll in our VIP channel now.
                 </p>
@@ -100,16 +100,16 @@
         </div>
     </div>
     <div class="container bg-[#111112] max-w-full">
-        <div class="">
+        <div class="flex lg:justify-evenly">
             <div class="">
-                <img src="/src/img/ape.png" alt="" class="">
+                <img src="/src/img/ape.png" alt="" class="lg:w-[450px] lg:mb-5">
                 <!-- Menambahkan w-full untuk memastikan gambar memenuhi lebar div dan mx-auto untuk memposisikan gambar di tengah -->
             </div>
             <div class="">
-                <img src="/src/img/VIP Chanel.png" alt="" class="mx-auto">
+                <img src="/src/img/VIP Chanel.png" alt="" class="mx-auto lg:w-[320px] lg:mt-24">
             </div>
-            <div class="mt-56 hidden">
-                <img src="/src/img/SCROOL.png" alt="" class="">
+            <div class="mt-56 hidden lg:block">
+                <img src="/src/img/SCROOL.png" alt="" class="lg:-mt-14">
             </div>
         </div>
     </div>
@@ -118,7 +118,7 @@
         <p class="text-xl text-center mb-6 text-slate-500 font-Kanit">
             NFT Signals is the ultimate alpha group for beginner and experienced traders to make profit flipping NFTs.
         </p>
-        <ul class="list-none list-inside flex justify-between text-lg mb-6 text-[#8FFF6A]">
+        <ul class="list-none list-inside flex justify-evenly text-lg mb-6 text-[#8FFF6A]">
             <li class="text-start text-4xl font-thin flex items-center md:text-6xl md:font-bold">The success rate <br> of our signals is <br>
                 80-90%</li>
             <li class="flex items-center">
@@ -130,7 +130,7 @@
     <div class="bg-[#111112]">
         <div class="w-full p-4 bg-[#1c1c1e] max-w-full sm:p-8 dark:bg-gray-800 dark:border-gray-700">
             <div class=" mb-4">
-                <h5 class="text-2xl font-bold leading-none text-[#8fff6a] dark:text-[#8fff6a] text-center uppercase">Top
+                <h5 class="text-2xl font-bold leading-none lg:text-5xl text-[#8fff6a] dark:text-[#8fff6a] text-center uppercase">Top
                     Customers <i class="fa-solid fa-ranking-star"></i></h5>
 
             </div>
@@ -231,8 +231,8 @@
         </div>
     </div>
     <div class="bg-[#111112]">
-        <h1 class="text-5xl font-bold text-center mb-6 text-white">Get Best NFTs Here</h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 md:gap-2">
+        <h1 class="text-5xl font-bold text-center mb-6 lg:p-6 text-white">Get Best NFTs Here</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 md:gap-2 lg:grid-cols-3">
             <div
                 class="w-full max-w-sm  mb-5 mx-auto bg-[#1c1c1e] border border-[#8fff6a] rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
@@ -684,14 +684,14 @@
 
         <div id="default-carousel" class="relative w-full" data-carousel="slide">
             <!-- Carousel wrapper -->
-            <div class="relative h-56 overflow-hidden  md:h-96">
+            <div class="relative h-56 overflow-hidden  md:h-96 ">
                 <!-- Item 1 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
                     <div
-                        class="absolute w-full -translate-x-1/2 grid grid-cols-2 rounded-lg -translate-y-1/2 top-1/2 left-1/2 gap-6">
+                        class="absolute w-full -translate-x-1/2 grid grid-cols-2 rounded-lg  -translate-y-1/2 top-1/2 left-1/2 gap-6">
 
                         <div
-                            class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                            class="w-full max-w-sm bg-white border border-gray-200 lg:mx-auto rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                             <div class="flex flex-col items-center p-6">
                                 <img class="w-16 h-16 mb-3 rounded-full shadow-lg" src="/src/img/pp/6.png"
                                     alt="Bonnie image" />
@@ -709,7 +709,7 @@
                         </div>
 
                         <div
-                            class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                            class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow lg:mx-auto dark:bg-gray-800 dark:border-gray-700">
                             <div class="flex flex-col items-center p-6">
                                 <img class="w-16 h-16 mb-3 rounded-full shadow-lg" src="/src/img/pp/7.png"
                                     alt="Bonnie image" />
@@ -731,9 +731,9 @@
                 <!-- Item 2 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
                     <div
-                        class="absolute w-full -translate-x-1/2 grid grid-cols-2 rounded-lg -translate-y-1/2 top-1/2 left-1/2 gap-6">
+                        class="absolute w-full -translate-x-1/2 grid grid-cols-2 rounded-lg  -translate-y-1/2 top-1/2 left-1/2 gap-6">
                         <div
-                            class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                            class="w-full max-w-sm bg-white border border-gray-200  lg:mx-auto rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                             <div class="flex flex-col items-center p-6">
                                 <img class="w-16 h-16 mb-3 rounded-full shadow-lg" src="/src/img/pp/8.png"
                                     alt="Bonnie image" />
@@ -750,7 +750,7 @@
                             </div>
                         </div>
                         <div
-                            class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                            class="w-full max-w-sm bg-white border border-gray-200 lg:mx-auto rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                             <div class="flex flex-col items-center p-6">
                                 <img class="w-16 h-16 mb-3 rounded-full shadow-lg" src="/src/img/pp/9.png"
                                     alt="Bonnie image" />
@@ -771,9 +771,9 @@
                 <!-- Item 3 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
                     <div
-                        class="absolute w-full -translate-x-1/2 grid grid-cols-2 rounded-lg -translate-y-1/2 top-1/2 left-1/2 gap-6">
+                        class="absolute w-full -translate-x-1/2 grid grid-cols-2 rounded-lg  -translate-y-1/2 top-1/2 left-1/2 gap-6">
                         <div
-                            class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                            class="w-full max-w-sm bg-white border border-gray-200 lg:mx-auto rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                             <div class="flex flex-col items-center p-6">
                                 <img class="w-16 h-16 mb-3 rounded-full shadow-lg" src="/src/img/pp/10.png"
                                     alt="Bonnie image" />
@@ -790,11 +790,11 @@
                             </div>
                         </div>
                         <div
-                            class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                            class="w-full max-w-sm bg-white border border-gray-200 lg:mx-auto rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                             <div class="flex flex-col items-center p-6">
                                 <img class="w-16 h-16 mb-3 rounded-full shadow-lg" src="/src/img/pp/11.png"
                                     alt="Bonnie image" />
-                                <h5 class="mb-1 text-lg font-medium text-gray-900 dark:text-white">Hakim el jaya <i
+                                <h5 class="mb-1 text-lg font-medium text-gray-900 dark:text-white">Hakim dwi yanto <i
                                         class="bi bi-patch-check-fill text-blue-600"></i></h5>
                                 <span class="text-sm text-gray-500 dark:text-gray-400">Alpha Group Support</span>
                                 <div class="flex mt-4 md:mt-6">
@@ -813,7 +813,7 @@
                     <div
                         class="absolute w-full -translate-x-1/2 grid grid-cols-2 rounded-lg -translate-y-1/2 top-1/2 left-1/2 gap-6">
                         <div
-                            class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                            class="w-full max-w-sm bg-white border border-gray-200 lg:mx-auto rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                             <div class="flex flex-col items-center p-6">
                                 <img class="w-16 h-16 mb-3 rounded-full shadow-lg" src="/src/img/pp/12.png"
                                     alt="Bonnie image" />
@@ -830,7 +830,7 @@
                             </div>
                         </div>
                         <div
-                            class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                            class="w-full max-w-sm bg-white border border-gray-200 lg:mx-auto rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                             <div class="flex flex-col items-center p-6">
                                 <img class="w-16 h-16 mb-3 rounded-full shadow-lg" src="/src/img/pp/13.png"
                                     alt="Bonnie image" />
@@ -849,11 +849,11 @@
                     </div>
                 </div>
                 <!-- Item 5 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <div class="hidden duration-700 ease-in-out " data-carousel-item>
                     <div
-                        class="absolute w-full -translate-x-1/2 grid grid-cols-2 rounded-xl -translate-y-1/2 top-1/2 left-1/2 gap-6">
+                        class="absolute w-full -translate-x-1/2 grid grid-cols-2 lg:mx-auto  rounded-xl -translate-y-1/2 top-1/2 left-1/2 gap-6">
                         <div
-                            class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                            class="w-full max-w-sm bg-white border border-gray-200 lg:mx-auto rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                             <div class="flex flex-col items-center p-6">
                                 <img class="w-16 h-16 mb-3 rounded-full shadow-lg" src="/src/img/pp/14.png"
                                     alt="Bonnie image" />
@@ -870,7 +870,7 @@
                             </div>
                         </div>
                         <div
-                            class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                            class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow lg:mx-auto dark:bg-gray-800 dark:border-gray-700">
                             <div class="flex flex-col items-center p-6">
                                 <img class="w-16 h-16 mb-3 rounded-full shadow-lg" src="/src/img/pp/15.png"
                                     alt="Bonnie image" />
@@ -899,7 +899,7 @@
 
     <div class="bg-[#1c1c1e]">
         <h1 class="text-5xl font-bold text-center p-5 text-white">Sales development of HAI <span class="text-[#8fff6a]">NFT</span></h1>
-        <div class="max-w-sm w-full  mx-auto bg-[#1c1c1e] rounded-lg shadow dark:bg-gray-800 p-4 md:p-6">
+        <div class=" w-full  mx-auto bg-[#1c1c1e] rounded-lg shadow dark:bg-gray-800 p-4 md:p-6">
             <div class="flex justify-between">
                 <div>
                     <h5 class="leading-none text-3xl font-bold text-[#8fff6a] dark:text-white pb-2">$52.855</h5>
