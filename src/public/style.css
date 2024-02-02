@@ -1833,6 +1833,10 @@ input:checked + .toggle-bg {
   background-color: rgb(255 255 255 / 0.5);
 }
 
+.bg-\[\] {
+  background-color: ;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
