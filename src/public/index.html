@@ -141,7 +141,7 @@
             <!--  -->
         
         </div>
-        <button id="toggleButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold z-50 py-2 px-4 rounded-full fixed bottom-4 right-4">
+        <button id="toggleButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold z-30 py-2 px-4 rounded-full fixed bottom-4 right-4">
             Light Mode
         </button>
     </nav>
@@ -2641,14 +2641,34 @@
         }
         
         // Whenever the user explicitly chooses light mode
-        localStorage.theme = 'light'
+        localStorage.theme = 'light';
         
         // Whenever the user explicitly chooses dark mode
-        localStorage.theme = 'dark'
+        localStorage.theme = 'dark';
         
         // Whenever the user explicitly chooses to respect the OS preference
-        localStorage.removeItem('theme')
-        </script>
+        localStorage.removeItem('theme');
+        
+        // Fungsi untuk mengganti mode
+        function toggleMode() {
+            const body = document.body;
+            const button = document.getElementById('toggleButton');
+
+            // Toggle class 'dark' pada elemen body
+            body.classList.toggle('dark');
+
+            // Ubah teks tombol sesuai dengan mode saat ini
+            if (body.classList.contains('dark')) {
+                button.textContent = 'Dark Mode';
+            } else {
+                button.textContent = 'Light Mode';
+            }
+        }
+
+        // Event listener untuk tombol
+        document.getElementById('toggleButton').addEventListener('click', toggleMode);
+    </script>
+        
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
