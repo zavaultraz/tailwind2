@@ -2468,6 +2468,11 @@ input:checked + .toggle-bg {
   background-color: 3;
 }
 
+:is(.dark .dark\:bg-\[\#190121\]) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(25 1 33 / var(--tw-bg-opacity));
+}
+
 :is(.dark .dark\:text-center) {
   text-align: center;
 }
@@ -2598,6 +2603,14 @@ input:checked + .toggle-bg {
 
 :is(.dark .dark\:hover\:bg-\[\#1\]:hover) {
   background-color: #1;
+}
+
+:is(.dark .dark\:hover\:bg-\[\#1091212\]:hover) {
+  background-color: #1091212;
+}
+
+:is(.dark .dark\:hover\:bg-\[\#10\]:hover) {
+  background-color: #10;
 }
 
 :is(.dark .dark\:hover\:text-blue-500:hover) {
