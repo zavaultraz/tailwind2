@@ -2522,6 +2522,14 @@ input:checked + .toggle-bg {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+:is(.dark .dark\:text-\[\]) {
+  color: ;
+}
+
+:is(.dark .dark\:text-\[\#8fff\]) {
+  color: #8fff;
+}
+
 :is(.dark .dark\:placeholder-gray-400)::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(156 163 175 / var(--tw-placeholder-opacity));
