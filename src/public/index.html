@@ -23,6 +23,11 @@
             document.documentElement.classList.remove('dark')
         }
     </script>
+    <style>
+        *{
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body>
@@ -52,24 +57,24 @@
                         <a href="#"></a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="#home"
                             class="block py-2 px-3 text-[#8FFF6A] dark:rounded-none rounded-3xl text-2xl md:bg-transparent md:border-0 md:text-[#8fff6a] md:p-0 dark:text-[#8fff6a] md:dark:text-[#8fff6a] md:dark:text-2xl"
                             aria-current="page">Home</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="#tod"
                             class="block py-2 px-3 rounded-3xl text-2xl dark:rounded-none text-white dark:text-black md:hover:bg-transparent md:border-0 md:hover:text-[#8fff6a] md:p-0 md:dark:hover:text-[#8fff6a]  dark:hover:text-white md:dark:hover:bg-transparent">About</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="#rank"
                             class="block py-2 px-3 rounded-3xl dark:rounded-none text-2xl text-white dark:text-black md:hover:bg-transparent md:border-0 md:hover:text-[#8FFF6A] md:p-0  md:dark:hover:text-[#8FFF6A]  dark:hover:text-white md:dark:hover:bg-transparent">Ranking</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="#shop"
                             class="block py-2 px-3 rounded-3xl text-2xl dark:rounded-none text-white dark:text-black  md:hover:bg-transparent md:border-0 md:hover:text-[#8FFF6A] md:p-0  md:dark:hover:text-[#8FFF6A]  dark:hover:text-white md:dark:hover:bg-transparent">Shop</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="#member"
                             class="block py-2 px-3 rounded-3xl text-2xl text-white  md:hover:bg-transparent md:border-0 md:hover:text-[#8FFF6A] md:p-0 dark:rounded-none dark:text-black md:dark:hover:text-[#8FFF6A]  dark:hover:text-white md:dark:hover:bg-transparent">Membership</a>
                     </li>
                 </ul>
@@ -165,7 +170,7 @@
             </button>
     </nav>
 
-    <div
+    <div id="home"
         class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 lg:gap-0 dark:grid-cols-1 gap-2 bg-[#111112] dark:bg-white ">
         <div class="container mb-24 hidden lg:block dark:hidden">
             <div class="p-2 ml-40 justify-center mt-0">
@@ -225,7 +230,7 @@
         </ul>
         <p class="text-xl text-center font-bold text-[#8FFF6A] hover:underline">Join the AlphaGroup now!</p>
     </div>
-    <div class="bg-[#111112]">
+    <div class="bg-[#111112]" id="rank">
         <div class="w-full p-4 bg-[#1c1c1e] max-w-full sm:p-8 dark:bg-gray-50 dark:border-gray-700">
             <div class=" mb-4">
                 <h5
@@ -340,7 +345,7 @@
             </div>
         </div>
     </div>
-    <div class="bg-[#111112] dark:bg-white">
+    <div class="bg-[#111112] dark:bg-white" id="shop">
         <h1 class="text-5xl font-bold text-center mb-6 lg:p-6 text-white dark:text-[#8fff6a]">Get Best NFTs Here</h1>
         <div class="grid grid-cols-1 md:grid-cols-2 md:gap-2 lg:grid-cols-3">
             <div
@@ -2393,7 +2398,7 @@
 
     </div>
 
-    <div class="bg-[#111112] dark:bg-gray-100">
+    <div class="bg-[#111112] dark:bg-gray-100" id="member">
         <h1 class="text-5xl py-5  max-w-full  font-bold text-center  text-white dark:text-[#8fff6a] uppercase">Invest
             your money with
             <span class="text-[#8fff6a]">membership</span>
