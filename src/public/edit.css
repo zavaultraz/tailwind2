@@ -70,9 +70,6 @@
         flex-direction:column;
     }
 }
-@media (max-width: 426px) {
-    #member {
-        margin:5px 0;
-    }}
+
 
     
